@@ -1,7 +1,7 @@
 **Introduction**  
 The purpose of this analysis was to determine the initial population size of a bacterial cultyre, the rate of growth and the carrying capacity of the population. The model is based on a population of bacteria formed from 900µl of growth media and 100µl of *E.coli* mixed together in a test tube. The test tube was then left for a duration of time to allow the bacteria to grow, so that the dyanmics of population growth can be modelled. *E.coli* grow very quickly and so in an environment rich in resources, i.e. the growth media, the bacteria will undergo exponential growth. However, when the resources are used and there is little left, the population will cease to grow and will become bacteriostatic as the population cannot grow any further. This is the maximum that the population can grow to and is known as the carrying capacity, or the parameter, k. 
 The exponential growth of the population can be modelled through: 
-$ Nt = (K * N0 * e^(rt))/(K - N0 + N0 * e^(rt)) $
+$ Nt = (K * N0 * e^r^t)/(K - N0 + N0 * e^r^t) $
 
 **Methodology**  
 In order to model the population growth, a repository from GitHub was forked containing the relevant data (experiment3.csv). The repository was forked to create a copy and a devolpment branch was created inside this fork so that any changes that are made are not immediately committed to the main branch. A license and README file were added before the analysis could begin.
@@ -12,7 +12,7 @@ The second part of the plot_data script involved transforming the exponential da
 In the second script, fit_linear_model, the parameters of the model could be elucidated through a linear model approximation. Two cases were looked at specifically to determine the model parameters. The first case was when K (the carrying capacity) >> N0 (i.e. K is much larger than the initial population size), when t is small (t~0). Modelling this would allow us to determine the rate that the population would have to grow at to reach k, therefore providing the r parameter. The second case looks at when Nt = k, or when the population size at time t is equal to k, i.e. when the population has reached the carrying capacity. Completing a linear model of this allows the carrying capacity to be determined. 
 
 The first and second scripts provide the parameters that are needed to estimate the initial population size in the third script. The thrid script, plot_data_and_model, both the data and model are plotted against each other to determine the accuracy of the estimates of k and r, while also allowing estimation of the initial population size. To find the initial population size, the value of k must be imputted into the equation: 
-$ N0 = e ^(Nt) $ 
+$ N0 = e ^N^t $ 
 
 **Results**  
 plot_data:
