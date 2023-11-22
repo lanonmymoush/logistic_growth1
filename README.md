@@ -16,16 +16,22 @@ The first and second scripts provide the parameters that are needed to estimate 
 $ N0 = e ^N^t $ 
 
 **Results**  
-plot_data:
+**plot_data:**
 As mentioned, this graph showed a sigmoidal growth curve frpom 0e+00 at N0 to approximately 5e+09 at the plateau, k. This script generated both exponential and logarithmic models of the bacterial population growth. These were displayed on graphs with time (t) (arbitrary units) on the x axis and population size on the y (y), and allowed us to visualise the data.
 
-fit_linear_model: 
+**fit_linear_model:**
 This script allowed for estimation of the parameters in the logarithmic model through the exploration of two specific cases. In case 1, k >> N0, and t ~ 0. In this case, I chose t < 1000 to ensure that t is small and inputted this data into a linear regression model. The execution of this model in R provided an estimate of the parameter r, which in this instance is 5.007e-03, and also the initial population size (log-transformed), 8.512e+00. 
 In case 2, Nt = k. This means that the population size at time t is equal to the carrying capacity, therefore allows us to find a value for the parameter, k. I chose a value of t > 3000 as this point in time is characterised by the population reaching the plateau, and inputted this value into the linear regression model. The summary table of the regression produced a value for k, 4.882e+09 (which appears to be an underestimation). 
 
-plot_data_and_model:
+**plot_data_and_model:**
 This script allowed for the estimation of the initial population size of the bacterial culture and also plotted a model of population growth based on the parameters obtained in the previous scripts. To estimate the initial population size, N0 of the logarithmic model (8.512e+00) must become an exponent, to back transform the logarithmic. This produces a value of the initial population size, e^8.512e+00. This can then be modelled in a graph produced by ggplot, again with t on the x axis and y on the y axis. The black dots represent the data points for population size at time = t, and the red line shows the generated model of population growth. 
 
 **Conclusions**  
 The analysis allowed me to determine the initial population size of the bacterial population through the elucidation of the parameters, k and r. This allowed a model of population growth in a bacterial population to be observed in a sigmoidal growth curve with help from a logarithmic transformation. This showed that the population size increased exponentially when resources were abundant, but decreased, plateaued and became bacteriostatic when the resources were scarce, thus allowing the population to reach carrying capacity. 
 Despite the model being a close reflection of the data, some improvements could be made, for example, the model could be a closer fit to the data, which would therefore more accurately represnt population growth of an *E.coli* culture in a test tube. A higher level of accuracy could come from using a larger value of t in the fit_linear_model script. The use of a smaller value of t, i.e. a value that doesn't reflect the time point when the population reached its carrying capacity means that the estimation of both k and N0 are lower than they should be. If I were to repeat this analysis, I would use a higher value of t, for example t > 3500, because at this point in time, the bacterial population had become bacteriostatic as was no longer increasing, and therefore accurately represents the value of the carrying capacity. This in turn would allow a more accurate estimation of the initial bacterial population, and also a more accurate model of population growth. 
+
+**Question 2** 
+<img width="737" alt="Screenshot 2023-11-22 at 12 00 16 pm" src="https://github.com/lanonmymoush/logistic_growth1/assets/151572854/288c6248-f56d-4b07-bc01-778160e20f38">
+
+
+
