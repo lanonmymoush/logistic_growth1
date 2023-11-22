@@ -1,3 +1,5 @@
+**Question 1**  
+
 **Introduction**  
 The purpose of this analysis was to determine the initial population size of a bacterial cultyre, the rate of growth and the carrying capacity of the population. The model is based on a population of bacteria formed from 900µl of growth media and 100µl of *E.coli* mixed together in a test tube. The test tube was then left for a duration of time to allow the bacteria to grow, so that the dyanmics of population growth can be modelled. *E.coli* grow very quickly and so in an environment rich in resources, i.e. the growth media, the bacteria will undergo exponential growth. However, when the resources are used and there is little left, the population will cease to grow and will become bacteriostatic as the population cannot grow any further. This is the maximum that the population can grow to and is known as the carrying capacity, or the parameter, k. 
 The exponential growth of the population can be modelled through: 
