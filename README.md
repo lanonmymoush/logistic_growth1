@@ -30,7 +30,8 @@ This script allowed for the estimation of the initial population size of the bac
 The analysis allowed me to determine the initial population size of the bacterial population through the elucidation of the parameters, k and r. This allowed a model of population growth in a bacterial population to be observed in a sigmoidal growth curve with help from a logarithmic transformation. This showed that the population size increased exponentially when resources were abundant, but decreased, plateaued and became bacteriostatic when the resources were scarce, thus allowing the population to reach carrying capacity. 
 Despite the model being a close reflection of the data, some improvements could be made, for example, the model could be a closer fit to the data, which would therefore more accurately represnt population growth of an *E.coli* culture in a test tube. A higher level of accuracy could come from using a larger value of t in the fit_linear_model script. The use of a smaller value of t, i.e. a value that doesn't reflect the time point when the population reached its carrying capacity means that the estimation of both k and N0 are lower than they should be. If I were to repeat this analysis, I would use a higher value of t, for example t > 3500, because at this point in time, the bacterial population had become bacteriostatic as was no longer increasing, and therefore accurately represents the value of the carrying capacity. This in turn would allow a more accurate estimation of the initial bacterial population, and also a more accurate model of population growth. 
 
-**Question 2** 
+**Question 2**  
+
 <img width="737" alt="Screenshot 2023-11-22 at 12 00 16 pm" src="https://github.com/lanonmymoush/logistic_growth1/assets/151572854/288c6248-f56d-4b07-bc01-778160e20f38">
 
 
