@@ -1,0 +1,42 @@
+# exponential growth vs logistic growth
+# logistic growth is sigmoidal 
+
+# the exponential equation is Nt = N0e^rt 
+
+#exponential_fun <- function(t) {...# insert all of the variables then alter the equation to be exponential
+#  N <- (N0*K*exp(r*t))/(K-N0+N0*exp(r*t))
+#  return(N)
+#}
+
+exponential_fun <- function(t) {
+  N0 <- exp(8.512e+00)
+  r <- 5.007e-03
+  Nt <- (N0 * (exp(r * t)))
+  return(Nt)
+}
+
+ggplot(aes(t,N), data = growth_data) +
+  geom_function(fun=logistic_fun, colour="red") +
+  geom_point()+
+  labs(title = "Graph to show logarithmic growth")
+scale_y_continuous(trans='log10')
+
+# under the same growth rate and initial population size as the logistic growth- this is the graph that is generated 
+ggplot(aes(t, N), data = growth_data)+
+  geom_function(fun=exponential_fun, colour= "blue")+
+  labs(title = "Graph to show exponential growth")
+
+ggplot(aes(t, N), data = growth_data)+
+  geom_function(fun=logistic_fun, colour="red") +
+  geom_function(fun=exponential_fun, colour= "blue")+
+  scale_y_continuous(trans='log10')+
+  labs(title= "Graph to show the log transformation of exponential and", 
+       subtitle = "logistic growth of a bacterial population", 
+       x = "Time (in minutes)", 
+       y = "Population Size")
+
+# the exponential becomes linear as a result of the transformation and the logisitc growth is also log transformed 
+
+sink(file = "package-versions.txt")
+sessionInfo()
+sink()
