@@ -48,7 +48,7 @@ and the parameters gathered from the analysis:
 - r = 5.007e-03
 - t = 4980
 
-I was able to calculate the population size, under exponential growth, at t = 4930 as Nt = 4881928977 (4.88e+09). As this is exponential growth, this exceeds the carrying capacity of the logistic bacterial growth as it can be assumed that resources do not become scarce or limit the population and so the population does not become bacteriostatic and can continue growing (the population will become larger under exponential growth than logisitc growth).
+I was able to calculate the population size, under exponential growth, at t = 4930 as Nt = 4881928977 (4.88e+09). As this is exponential growth, this exceeds the carrying capacity of the logistic bacterial growth as it can be assumed that resources do not become scarce or limit the population and so the population does not become bacteriostatic and can continue growing (the population will become larger under exponential growth than logistic growth).
 Under logistic growth (sigmoidal), the curve would be expected to plateau and so would reach a carrying capacity where the population cannot increase in size any further. This means that the value of Nt would not increase regardless of the value of t inputted into the equation. 
 
 ***Question 3***  
