@@ -52,12 +52,17 @@ I was able to calculate the population size, under exponential growth, at t = 49
 Under logistic growth (sigmoidal), the curve would be expected to plateau and so would reach a carrying capacity where the population cannot increase in size any further. This means that the value of Nt would not increase regardless of the value of t inputted into the equation. 
 
 ***Question 3***  
-<img width="543" alt="Screenshot 2023-11-23 at 12 50 10 pm" src="https://github.com/lanonmymoush/logistic_growth1/assets/151572854/a1974c88-85c1-45bf-be3f-2b7347018299">
+<img width="536" alt="Screenshot 2023-11-30 at 3 05 10 pm" src="https://github.com/lanonmymoush/logistic_growth1/assets/151572854/e71653a5-602b-44bd-b0d7-ddcb5bb7adf2">
 
 <img width="543" alt="Screenshot 2023-11-23 at 12 51 00 pm" src="https://github.com/lanonmymoush/logistic_growth1/assets/151572854/339b53af-d66d-4f58-9014-811308d895d6">
 
 <img width="543" alt="Screenshot 2023-11-23 at 12 48 46 pm" src="https://github.com/lanonmymoush/logistic_growth1/assets/151572854/e6d9bf14-414d-4ef0-9b1a-ae6671cacd27">
-<img width="408" alt="image" src="https://github.com/lanonmymoush/logistic_growth1/assets/151572854/0aab49f6-6457-4426-a709-f8751f80d525">
+<img width="408" alt="image" src="https://github.com/lanonmymoush/logistic_growth1/assets/151572854/0aab49f6-6457-4426-a709-f8751f80d525">  
 
+I decided to produce a graph which showed the log transformations of the exponential and logistic functions so that the differences are easier to see. Before the transformation, the scale of the graph is so large, that any change in population size in the logistic model cannot be observed.  
+<img width="536" alt="image" src="https://github.com/lanonmymoush/logistic_growth1/assets/151572854/d51da4b7-dcc1-424c-b304-d2bac8912cda">  
+However, with the transformation, the exponential becomes linear as it has been log transformed and also allows for easier comparison to the logistic model. 
 
+Alternatively, if a log-transformation should not be used, a limit could be implemented on the y-axis to which would allow both the exponential and logistic/sigmoidal shapes to me demonstrated.  
+<img width="536" alt="image" src="https://github.com/lanonmymoush/logistic_growth1/assets/151572854/f6b93466-7ba4-40df-8da2-88b7c289bdff">
 
